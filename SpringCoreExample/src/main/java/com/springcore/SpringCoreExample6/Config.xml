@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/util
+                    http://www.springframework.org/schema/util/spring-util.xsd">
+
+<bean id="firstSemCourse" class="com.springcore.SpringCoreExample6.Course">
+	<property name="subjects" ref="list"></property>
+</bean>
+
+<util:list id="list" value-type="java.lang.String" list-class="java.util.vector">
+	<value>java</value>
+	<value>Sprig</value>
+	<value>Sprig Boot</value>
+</util:list>:
+
+</beans>

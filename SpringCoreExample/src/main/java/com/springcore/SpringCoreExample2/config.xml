@@ -1,0 +1,26 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="student" class="com.springcore.SpringCoreExample2.Student">
+	
+	 <property name="book" > 
+		<!-- <bean id="javaBook" class="com.springcore.SpringCoreExample2.JavaBook" />-->
+		<bean id="springBook" class="com.springcore.SpringCoreExample2.SpringBook" />
+		 
+	 </property>
+</bean>
+	
+	
+ <!--<bean id="javaBook" class="com.springcore.SpringCoreExample2.JavaBook" />-->
+
+
+ <bean id="springBook" class="com.springcore.SpringCoreExample2.SpringBook" />
+			
+ 
+	
+	<!--<bean id="books" class="com.springcore.SpringCoreExample2.Book" />-->
+
+</beans>
